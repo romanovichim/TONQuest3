@@ -2,13 +2,11 @@
 
 ## 🚩 Challenge 3: Jetton Vending Machine
 
-TBD
 🌟 Сompile, test and deploy chatbot smart contract to the test network. 
 
 💬 Meet other builders working in TON and get help in the [official dev chat](https://t.me/tondev_eng) or [TON learn tg](https://t.me/ton_learn)
 
-
-# Checkpoint 0:  Install 
+# Checkpoint 0:  🌼 Install 🌼
 
 Required: 
 * [Git](https://git-scm.com/downloads)
@@ -27,12 +25,23 @@ yarn chain
 ```
 ---
 
-# Checkpoint 1: Jetton Standard
+# Checkpoint 1: 💎 Jetton Standard 💎
 
+A token is a unit of account for some digital asset in some network.
+
+Fungible tokens are assets that are not unique and can be easily exchanged for another asset of the same type. Such tokens are made in such a way that each token is equivalent to the next token.
+
+To enable tokens to be used in other applications (from wallets to decentralized exchanges), smart contract interface standards for tokens are being introduced.
+
+The standard for a fungible token in the TON is the [Jetton](https://github.com/ton-blockchain/TEPs/blob/master/text/0074-jettons-standard.md).
+
+Unlike ethereum, there is no single smart contract that stores token balances for network wallets. In the standard Token:
+- master contract stores general information about the token
+- for each owner of the token, a separate smart contract is created - a wallet contract, which allows you to transfer the token and store the balance
 
 ---
-
-# Checkpoint 2: Get Jetton Master Contract Data
+ 
+# Checkpoint 2:  📑 Get Jetton Master Contract Data 📂 
 
 As in the NFT standard from the first quest, Jetton contracts have mandatory GET methods. For the master contract, one of those methods is `get_jetton_data()` which returns data about the Jetton, let's try:
 
@@ -53,11 +62,15 @@ Well, now let's release our Jetton!
 
 ---
 
-# Checkpoint 3: ICO variation
+# Checkpoint 3:  🏭 ICO variation 🏭
+
+ICO - Initial Coin Offering - issuance by a project or company of its own money - tokens (cryptocurrency) in order to attract investment.
+
+The simplest smart contract for Initial Coin Offering is a slightly modified Jetton standard master contract, which, when sending cryptocurrencies to it, gives tokens in exchange.
 
 ---
 
-# Checkpoint 4: Compile
+# Checkpoint 4:  🔌 Compile🔌  
 
 As in the previous quest, in order to use a smart contract, it must be compiled into a hexBoC format. First, we will compile the master contract, and then the wallet, the wallet will be needed to deploy the master contract:
 
@@ -70,7 +83,7 @@ yarn compilewallet
 ```
 ---
 
-# Checkpoint 6:  Deploy
+# Checkpoint 6:  📻 Deploy 📡
 
 Go to the deploy.ts file, in the line 62, change the const `ownerAddress` to your own, it will be stored in register c4, and only from this address it will be possible to execute commands assigned to administer the token.
 
@@ -88,7 +101,7 @@ Be sure to save the link below the quar code, it contains the address of the mas
 
 ---
 
-# Checkpoint 7:  Get your Master Contract Data
+# Checkpoint 7: 💾  Get your Master Contract Data 💾
 
 We go into the file and change the address at the top of the file on the line to the address of your master contract.
 
@@ -104,7 +117,7 @@ If everything worked out, it's time to participate in ICO
 
 ---
 
-# Checkpoint 8: Participate in ICO
+# Checkpoint 8:  📀 Participate in ICO 📀
 
 To participate in the ISO, you just need to send a message to the smart contract, let's do this:
 
@@ -117,7 +130,7 @@ The question arises how to get the balance of our Jetton wallet.
 
 ---
 
-# Checkpoint 9: Getting to the wallet
+# Checkpoint 9:  🎰 Getting to the wallet 🎰
 
 Using the master contract, we will receive a wallet token of our address. Get method `get_wallet_address()`:
 
@@ -142,12 +155,16 @@ Enjoy the balance)
 
 ---
 
-
 # ⚔️ Side Quests
 
-TBD
+Quick results are great, but to play longer, enjoy the ecosystem, I suggest you the following tutorials:
+- Analyzing the [Jetton standard](https://github.com/romanovichim/TonFunClessons_Eng/blob/main/lessons/smartcontract/9lesson/ninthlesson.md)
+- [Deploy ICO](https://github.com/romanovichim/TonFunClessons_Eng/blob/main/lessons/golang/16lesson/ICO.md) to testnet using Golang scripts
 
 
+
+
+ 
 
 
  
