@@ -2,7 +2,10 @@
 
 ## 🚩 Challenge 3: Jetton Vending Machine
 
-🌟 Сompile, test and deploy chatbot smart contract to the test network. 
+🤖 Smart contracts are kind of like "always on" vending machines that anyone can access. Let's make a decentralized, digital currency (an Jetton Standart token). 
+
+🌟 The final deliverable will be ICO contract deployed to the testnet
+
 
 💬 Meet other builders working in TON and get help in the [official dev chat](https://t.me/tondev_eng) or [TON learn tg](https://t.me/ton_learn)
 
