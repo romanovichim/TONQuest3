@@ -170,6 +170,8 @@ Congratulations on successfully completing this challenge! Before we conclude, l
 
 <img style="border-radius: 10pt; margin: 25pt auto; display: block;" width="40%" src="https://ton-devrel.s3.eu-central-1.amazonaws.com/tonspeedrun/1/image.jpg">
 
-Ready to claim your reward? Simply scan the QR code below or click <a href="https://app.tonkeeper.com/transfer/EQCZ52LU4PsK71IVjn4Ur599R4ZdsnT9ToAEqysot628BEdo?bin=te6cckEBAQEABgAACARV_--aShXm&amount=50000000">here</a>:
+Ready to claim your reward? Just scan the QR code, which can be generated using the script below:
 
-<img src="https://i.imgur.com/4wpj9EL.png" alt="QR-code" style="width: 30%;"/>
+```sh
+yarn reward
+```
