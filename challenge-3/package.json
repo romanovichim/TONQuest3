@@ -30,7 +30,8 @@
     "compilewallet": "ts-node ./scripts/compileWallet.ts",
     "test": "yarn jest",
     "deploy": "ts-node ./scripts/deploy.ts",
-    "send": "ts-node ./scripts/sendMsg.ts"
+    "send": "ts-node ./scripts/sendMsg.ts",
+    "reward": "ts-node ./scripts/reward.ts"
   },
   "dependencies": {
     "@ton-community/test-utils": "^0.2.0"

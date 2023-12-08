@@ -164,9 +164,14 @@ Quick results are great, but to play longer, enjoy the ecosystem, I suggest you 
 - [Deploy ICO](https://github.com/romanovichim/TonFunClessons_Eng/blob/main/lessons/golang/16lesson/ICO.md) to testnet using Golang scripts
 
 
+# 🏆 Reward 
 
+Congratulations on successfully completing this challenge! Before we conclude, let's take a quick look at the exciting reward awaiting you from the <a target="_blank" href="https://getgems.io/collection/EQBsrgKiU7y80gDdjhIa9JNOqFZYpxwdEB7F9GCq_l-oAm3T">"TON Speedrun"</a> collection:
 
- 
+<img style="border-radius: 10pt; margin: 25pt auto; display: block;" width="40%" src="https://ton-devrel.s3.eu-central-1.amazonaws.com/tonspeedrun/1/image.jpg">
 
+Ready to claim your reward? Just scan the QR code, which can be generated using the script below:
 
- 
+```sh
+yarn reward
+```
